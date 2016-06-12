@@ -72,14 +72,14 @@ static NSString *const rightIdentifier = @"rightIdentifier";
 
 - (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
     
-    if (self.delegate && [self.delegate respondsToSelector:@selector(willDisplayHeaderView:)] != _isUpScroll &&_rightTableView.isDecelerating) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(willDisplayHeaderView:)] != _isUpScroll ) {
         [self.delegate willDisplayHeaderView:section];
     }
 }
 
 - (void)tableView:(UITableView *)tableView didEndDisplayingHeaderView:(UIView *)view forSection:(NSInteger)section {
     
-    if (self.delegate  && [self.delegate respondsToSelector:@selector(didEndDisplayingHeaderView:)] && _isUpScroll &&_rightTableView.isDecelerating) {
+    if (self.delegate  && [self.delegate respondsToSelector:@selector(didEndDisplayingHeaderView:)] && _isUpScroll) {
         [self.delegate didEndDisplayingHeaderView:section];
     }
 }

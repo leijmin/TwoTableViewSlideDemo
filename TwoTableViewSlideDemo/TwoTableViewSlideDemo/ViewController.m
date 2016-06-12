@@ -28,6 +28,8 @@
     leftDataArray = [NSMutableArray arrayWithObjects:@"热销菜品",@"精选组合",@"粥类",@"东北小町米",@"特色佳肴",@"商务套餐",@"开胃冷菜",@"热菜大荤",@"汤类",@"酒水饮料", nil];
     
     rightDataArray = [NSMutableArray arrayWithObjects:@"米饭",@"小炒花菜",@"黑木耳炒山药",@"红烧鸡腿",@"农家小炒肉",@"板栗烧鸡", nil];
+    
+    
     [self.view addSubview:self.slideView];
     
     

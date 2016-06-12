@@ -16,5 +16,9 @@
                 leftDataArray:(NSMutableArray *)leftDataArray
                rightDataArray:(NSMutableArray *)rightDataArray;
 
+/**
+ *   该View对应所在的控制器
+ */
+@property (nonatomic ,strong)UIViewController *parentVC;
 
 @end

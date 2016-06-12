@@ -10,10 +10,6 @@
 #import "RightClildViewController.h"
 @interface JMSlideView ()<UITableViewDelegate,UITableViewDataSource,ScrollAtSectionDelegate>
 
-/**
- *   该View对应所在的控制器
- */
-@property (nonatomic ,strong)UIViewController *parentVC;
 
 /**
  *  右边 子控制器
